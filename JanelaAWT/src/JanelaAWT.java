@@ -1,5 +1,3 @@
-package aula2_2024;
-
 import java.awt.Button;
 import java.awt.Frame;
 import java.awt.Color;
@@ -7,14 +5,14 @@ import java.awt.Dimension;
 import java.awt.Label;
 import java.awt.TextField;
 
-public class Aula2_2024 extends Frame {
-    
+public class JanelaAWT extends Frame {
+
     Dimension dim, dim2, dim3;
     Button Botao1;
     TextField CampoTexto;
     Label texto;
-    
-    public Aula2_2024 () {
+
+    public JanelaAWT () {
         dim = new Dimension(400,300);
         dim2 = new Dimension(150,20);
         dim3 = new Dimension(60,20);
@@ -35,13 +33,13 @@ public class Aula2_2024 extends Frame {
         Botao1.setSize(dim3);
         Botao1.setBackground(Color.red);
         Botao1.setForeground(Color.white);
-        
+
         add(texto);
         add(CampoTexto);
         add(Botao1);
     }
-    
+
     public static void main(String[] args) {
-        new Aula2_2024().setVisible(true);
+        new JanelaAWT().setVisible(true);
     }
 }
